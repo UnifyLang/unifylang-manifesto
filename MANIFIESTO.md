@@ -56,10 +56,10 @@ Es la arquitectura de la unificación.
 
 ## Cuatro principios
 
-### I. No intrusivo en la hoja, unificado en el límite.
+### I. No intrusivo, unificado en el límite.
 Los bloques de código permanecen nativos. La adopción es progresiva: una directiva en un script es un punto de partida válido. No hay proyecto de migración. No hay rip-and-replace. La unificación ocurre en el límite entre sistemas: donde un runtime llama a otro, donde un lenguaje entrega al siguiente, donde la salida de un equipo se vuelve entrada de otro. Ahí se escondía el impuesto al silo. Ahí se ancla la capa de unificación.
 
-### II. La intención es un primitivo, no un comentario.
+### II. La intención es una primitiva, no un comentario.
 El código expresa *cómo*. Los comentarios expresan *por qué*, y se pudren. Cerramos esa brecha haciendo de la intención un valor de primera clase, content-addressed y propagado. Cada operación lleva una intención. Cada intención lleva un hash. Cada hash fluye por la cadena. Cuando un auditor pregunta "¿por qué ocurrió esto?", la respuesta no es una conjetura entre logs fragmentados: es un recorrido determinista por un grafo firmado y verificable.
 
 ### III. La auditoría es evidencia, no documentación.
@@ -81,7 +81,7 @@ Un manifiesto se define tanto por sus negativas como por sus afirmaciones. No va
 
 ## Lo que se vuelve posible
 
-Cuando el límite se unifica, problemas estructuralmente difíciles se vuelven estructuralmente legibles.
+Cuando el límite se unifica, problemas estructuralmente difíciles se vuelven estructuralmente legibles y accionables.
 
 - Las transacciones cross-language dejan de requerir orquestadores SAGA custom. La capa lleva el límite transaccional.
 - La gobernanza de agentes IA deja de requerir stacks de observabilidad paralelos. Cada tool call, cada inferencia, cada plan emite provenance en la misma cadena que cada escritura en base de datos.
